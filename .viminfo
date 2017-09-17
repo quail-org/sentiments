@@ -11,9 +11,9 @@
 ~Msle0~/\<print\>
 
 # Command Line History (newest to oldest):
+:wq
 :q
 :w
-:wq
 :q!
 :set number
 :3
@@ -55,18 +55,20 @@
 	"
 
 # File marks:
-'0  1  4  ~/.gitignore
-'1  18  2  ~/word_to_integers.py
-'2  26  50  ~/word_to_integers.py
-'3  60  4  ~/loader_v2.py
-'4  154  0  ~/train_2.py
-'5  161  0  ~/train_2.py
-'6  150  0  ~/loader_v2.py
-'7  1  15  ~/word_dict.txt
-'8  7  12  ~/word_to_integers.py
-'9  9  17  ~/word_to_integers.py
+'0  110  9  ~/vec_word.py
+'1  1  4  ~/.gitignore
+'2  18  2  ~/word_to_integers.py
+'3  26  50  ~/word_to_integers.py
+'4  60  4  ~/loader_v2.py
+'5  154  0  ~/train_2.py
+'6  161  0  ~/train_2.py
+'7  150  0  ~/loader_v2.py
+'8  1  15  ~/word_dict.txt
+'9  7  12  ~/word_to_integers.py
 
 # Jumplist (newest first):
+-'  110  9  ~/vec_word.py
+-'  1  0  ~/vec_word.py
 -'  1  4  ~/.gitignore
 -'  18  2  ~/word_to_integers.py
 -'  1  0  ~/word_to_integers.py
@@ -164,9 +166,14 @@
 -'  1  0  ~/train.py
 -'  1  0  ~/train
 -'  4  28  ~/Dockerfile
--'  18  2  ~/word_to_integers.py
 
 # History of marks within files (newest to oldest):
+
+> ~/vec_word.py
+	"	110	9
+	^	110	10
+	.	110	0
+	+	110	0
 
 > ~/.gitignore
 	"	1	4
