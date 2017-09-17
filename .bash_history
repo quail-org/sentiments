@@ -265,3 +265,37 @@ curl -H "Content-Type: application/json" -X POST -d '{"word": [1, 2, 3, 4]}' loc
 curl -H "Content-Type: application/json" -X POST -d '{"word": [1, 2, 3, 4, 5, 6, 7, 8]}' localhost:8000/
 ls
 ls
+git status
+git add .
+vim .gitignore
+ls
+git status
+git add .
+git commit -m "use new dictionary etc"
+git push origin master
+ls
+touch vec_word.py
+vim vec_word.py 
+python vec_word.py 
+nvidia-docker build -t word_2_vec .
+docker ps
+nvidia-docker run -it word_2_vec 
+ls
+nvidia-docker build -t word_2_vec .
+nvidia-docker run --name word_2_vec -v $HOME/testserve:/data -d -p 8000:80 -e WITH_GPU=1 paddlepaddle/book:serve-gpu
+docker stop word_2_vec
+docker rm word_2_vec 
+nvidia-docker run --name word_2_vec -v $HOME/testserve:/data -d -p 8000:80 -e WITH_GPU=1 paddlepaddle/book:serve-gpu
+nvidia-docker build -t word_2_vec .
+nvidia-docker run --name word_2_vec -v $HOME/testserve:/data -d -p 8000:80 -e WITH_GPU=1 paddlepaddle/book:serve-gpu
+docker ps
+docker stop word_2_vec
+docker rm word_2_vec
+nvidia-docker run --name word_2_vec -v $HOME/testserve:/data -d -p 8000:80 -e WITH_GPU=1 paddlepaddle/book:serve-gpu
+nvidia-docker run -it -v $HOME/.cache:/root/.cache --name xxx paddlepaddle/book:latest-gpu /bin/bash
+nvidia-docker run -it -v $HOME:/data --name word_2_vec  paddlepaddle/book:latest-gpu /bin/bash
+docker stop word_2_vc
+docker stop word_2_ve
+docker stop word_2_vec
+docker rm word_2_vec
+nvidia-docker run -it -v $HOME:/data --name word_2_vec  paddlepaddle/book:latest-gpu /bin/bash

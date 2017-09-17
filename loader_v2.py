@@ -47,7 +47,7 @@ def build_dict(cutoff):
     word_freq = collections.defaultdict(int)
     for filename in filenames:
         for tweet in load_file(filename):
-            for word in tweet.lower().split(' '):
+            for word in re.sub(r"(@[A-Za-z0-9_-]+)|([^A-Za-z0-9-_\s]+)","",tweet).strip().lower().split(' '):
                 word_freq[word] += 1
 
     # Not sure if we should prune less-frequent words here.

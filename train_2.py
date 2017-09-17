@@ -140,7 +140,7 @@ if __name__ == '__main__':
                 sys.stdout.write('.')
                 sys.stdout.flush()
         if isinstance(event, paddle.event.EndPass):
-            with open('./params_pass4_%d.tar' % event.pass_id, 'w') as f:
+            with open('./params_pass5_%d.tar' % event.pass_id, 'w') as f:
                 parameters.to_tar(f)
 
             result = trainer.test(reader=test_reader, feeding=feeding)
@@ -151,7 +151,7 @@ if __name__ == '__main__':
         cost=cost, parameters=parameters, update_equation=adam_optimizer)
     # Save the inference topology to protobuf.
     inference_topology = paddle.topology.Topology(layers=output)
-    with open("./inference_topology4.pkl", 'wb') as f:
+    with open("./inference_topology.pkl", 'wb') as f:
         inference_topology.serialize_for_inference(f)
 
     trainer.train(

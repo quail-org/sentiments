@@ -11,6 +11,7 @@
 ~Msle0~/\<print\>
 
 # Command Line History (newest to oldest):
+:wq!
 :wq
 :q
 :w
@@ -19,7 +20,6 @@
 :3
 :2
 :1
-:wq!
 
 # Search String History (newest to oldest):
 ? \<print\>
@@ -55,18 +55,22 @@
 	"
 
 # File marks:
-'0  110  9  ~/vec_word.py
-'1  1  4  ~/.gitignore
-'2  18  2  ~/word_to_integers.py
-'3  26  50  ~/word_to_integers.py
-'4  60  4  ~/loader_v2.py
-'5  154  0  ~/train_2.py
-'6  161  0  ~/train_2.py
-'7  150  0  ~/loader_v2.py
-'8  1  15  ~/word_dict.txt
-'9  7  12  ~/word_to_integers.py
+'0  155  36  ~/train_2.py
+'1  50  97  ~/loader_v2.py
+'2  110  9  ~/vec_word.py
+'3  1  4  ~/.gitignore
+'4  18  2  ~/word_to_integers.py
+'5  26  50  ~/word_to_integers.py
+'6  60  4  ~/loader_v2.py
+'7  154  0  ~/train_2.py
+'8  161  0  ~/train_2.py
+'9  150  0  ~/loader_v2.py
 
 # Jumplist (newest first):
+-'  155  36  ~/train_2.py
+-'  1  0  ~/train_2.py
+-'  50  97  ~/loader_v2.py
+-'  1  0  ~/loader_v2.py
 -'  110  9  ~/vec_word.py
 -'  1  0  ~/vec_word.py
 -'  1  4  ~/.gitignore
@@ -75,9 +79,7 @@
 -'  26  50  ~/word_to_integers.py
 -'  23  1  ~/word_to_integers.py
 -'  60  4  ~/loader_v2.py
--'  1  0  ~/loader_v2.py
 -'  154  0  ~/train_2.py
--'  1  0  ~/train_2.py
 -'  161  0  ~/train_2.py
 -'  150  0  ~/loader_v2.py
 -'  1  15  ~/word_dict.txt
@@ -90,7 +92,6 @@
 -'  14  8  ~/word_to_integers.py
 -'  13  3  ~/word_to_integers.py
 -'  17  5  ~/word_to_integers.py
--'  50  47  ~/loader_v2.py
 -'  1  0  ~/Dockerfile
 -'  1  0  ~/DO
 -'  86  23  ~/loader_v2.py
@@ -164,10 +165,28 @@
 -'  1  0  ~/DO
 -'  17  15  ~/train.py
 -'  1  0  ~/train.py
--'  1  0  ~/train
--'  4  28  ~/Dockerfile
 
 # History of marks within files (newest to oldest):
+
+> ~/train_2.py
+	"	155	36
+	^	155	37
+	.	143	36
+	+	161	19
+	+	154	35
+	+	143	36
+
+> ~/loader_v2.py
+	"	50	97
+	^	50	98
+	.	50	88
+	+	50	28
+	+	79	22
+	+	86	23
+	+	50	48
+	+	64	29
+	+	60	4
+	+	50	88
 
 > ~/vec_word.py
 	"	110	9
@@ -246,23 +265,6 @@
 	+	23	0
 	+	26	52
 	+	18	2
-
-> ~/loader_v2.py
-	"	60	4
-	^	60	5
-	.	60	4
-	+	50	28
-	+	79	22
-	+	86	23
-	+	50	48
-	+	64	29
-	+	60	4
-
-> ~/train_2.py
-	"	154	0
-	^	161	20
-	.	161	19
-	+	161	19
 
 > ~/word_dict.txt
 	"	1	15
