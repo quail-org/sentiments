@@ -55,20 +55,21 @@
 	"
 
 # File marks:
-'0  155  36  ~/train_2.py
-'1  50  97  ~/loader_v2.py
-'2  110  9  ~/vec_word.py
-'3  1  4  ~/.gitignore
-'4  18  2  ~/word_to_integers.py
-'5  26  50  ~/word_to_integers.py
-'6  60  4  ~/loader_v2.py
-'7  154  0  ~/train_2.py
-'8  161  0  ~/train_2.py
+'0  161  0  ~/train_2.py
+'1  155  36  ~/train_2.py
+'2  50  97  ~/loader_v2.py
+'3  110  9  ~/vec_word.py
+'4  1  4  ~/.gitignore
+'5  18  2  ~/word_to_integers.py
+'6  26  50  ~/word_to_integers.py
+'7  60  4  ~/loader_v2.py
+'8  154  0  ~/train_2.py
 '9  150  0  ~/loader_v2.py
 
 # Jumplist (newest first):
--'  155  36  ~/train_2.py
+-'  161  0  ~/train_2.py
 -'  1  0  ~/train_2.py
+-'  155  36  ~/train_2.py
 -'  50  97  ~/loader_v2.py
 -'  1  0  ~/loader_v2.py
 -'  110  9  ~/vec_word.py
@@ -80,7 +81,6 @@
 -'  23  1  ~/word_to_integers.py
 -'  60  4  ~/loader_v2.py
 -'  154  0  ~/train_2.py
--'  161  0  ~/train_2.py
 -'  150  0  ~/loader_v2.py
 -'  1  15  ~/word_dict.txt
 -'  7  12  ~/word_to_integers.py
@@ -164,12 +164,11 @@
 -'  1  0  ~/Dockerfile
 -'  1  0  ~/DO
 -'  17  15  ~/train.py
--'  1  0  ~/train.py
 
 # History of marks within files (newest to oldest):
 
 > ~/train_2.py
-	"	155	36
+	"	161	0
 	^	155	37
 	.	143	36
 	+	161	19

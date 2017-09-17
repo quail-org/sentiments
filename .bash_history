@@ -299,3 +299,217 @@ docker stop word_2_ve
 docker stop word_2_vec
 docker rm word_2_vec
 nvidia-docker run -it -v $HOME:/data --name word_2_vec  paddlepaddle/book:latest-gpu /bin/bash
+ls
+vim train_2.py 
+ls
+nvidia-docker run -it -v $HOME:/data --name second_try paddlepaddle/book:latest-gpu /bin/bash
+docker ps
+docker rm second_try
+docker stop second_try 
+nvidia-docker run -it -v $HOME:/data --name second_try paddlepaddle/book:latest-gpu /bin/bash
+docker rm second_try 
+nvidia-docker run -it -v $HOME:/data --name second_try paddlepaddle/book:latest-gpu /bin/bash
+ls
+nvidia-docker run --name paddle_serve -v `pwd`:/data -d -p 8000:80 -e WITH_GPU=1 paddlepaddle/book:serve-gpu
+ls
+docker ps
+docker stop paddle_serve
+docker rm paddle_serve
+ls
+docker ps
+ls
+cp params_pass3_2.tar testserve/param.tar
+cp inference_topology.pkl testserve/inference_topology.pkl
+nvidia-docker run --name paddle_serve -v $Home/testserve:/data -d -p 8000:80 -e WITH_GPU=1 paddlepaddle/book:serve-gpu
+ls
+do ker ps
+dockerps
+docker ps
+curl -X POST -H 'Content-Type: application/json' -d "{\"word\": [133, 26, 1079, 551]}" localhost:8000
+curl -X POST -H "Content-Type: application/json" -d "{\"word\": [133, 26, 1079, 551]}" localhost:8000
+curl -X POST -H "Content-Type: application/json" -d "{\"word\": [133, 26, 1079, 551]}" localhost
+curl -X POST -H "Content-Type: application/json" -d "{\"word\": [133, 26, 1079, 551]}" localhost:8000
+cd testserve
+ls
+cd ..
+ls
+cp inference_topology3.pkl testserve/inference_topology.pkl
+nvidia-docker run --name paddle_serve -v $Home/testserve:/data -d -p 8000:80 -e WITH_GPU=1 paddlepaddle/book:serve-gpu
+docker ps
+curl -X POST -H "Content-Type: application/json" -d "{\"word\": [133, 26, 1079, 551]}" localhost:8000
+cp inference_topology2.pkl testserve/inference_topology.pkl
+cp params_pass2_2.tar testserve/param.tar
+nvidia-docker run --name paddle_serve -v $Home/testserve:/data -d -p 8000:80 -e WITH_GPU=1 paddlepaddle/book:serve-gpu
+docker stop paddle_serve
+docker rm paddle_serve
+nvidia-docker run --name paddle_serve -v $Home/testserve:/data -d -p 8000:80 -e WITH_GPU=1 paddlepaddle/book:serve-gpu
+ls
+docker ps
+curl -X POST -H "Content-Type: application/json" -d "{\"word\": [133, 26, 1079, 551]}" localhost:8000
+docker stop paddle_serve
+docker rm paddle_serve
+ls
+rm -r testserve
+ls
+mkdir testserve
+ls
+cp inference_topology2.pkl testserve/inference_topology.pkl
+ls
+cd testserve
+ls
+cd ..
+cp params_pass2_2.tar testserve/param.tar
+ls
+cd testserve
+ls
+cd ..
+ls
+nvidia-docker run --name paddle_serve -v $Home/testserve:/data -d -p 8000:80 -e WITH_GPU=1 paddlepaddle/book:serve-gpu
+ls
+docker ps
+curl -X POST -H "Content-Type: application/json" -d "{\"word\": [133, 26, 1079, 551]}" localhost:8000
+curl -X POST -H "Content-Type: application/json" -d "{\"word\": [133]}" localhost:8000
+docker ps
+docker logs -f 8b512c953ceb
+$Home/testserve
+cd testser ev
+cd testserve
+ls
+docker stop paddle_serve
+docker rm paddle_serve
+ls
+cd ..
+nvidia-docker run --name paddle_serve -v $Home/testserve/:/data -d -p 8000:80 -e WITH_GPU=1 paddlepaddle/book:serve-gpu
+ls
+curl -X POST -H "Content-Type: application/json" -d "{\"word\": [133, 26, 1079, 551]}" localhost:8000
+docker ps
+docker logs -f 082b0c7a30ff
+ls
+cd testserve
+ls
+pwd
+$Home/testserve
+$Home/testserve/param.tar
+docker stop paddle-Serve
+docker stop paddle_serve
+docker rm paddle_serve
+ls
+cd..
+cd ..
+nvidia-docker run --name paddle_serve -v $HOME/testserve/:/data -d -p 8000:80 -e WITH_GPU=1 paddlepaddle/book:serve-gpu
+curl -X POST -H "Content-Type: application/json" -d "{\"word\": [133, 26, 1079, 551]}" localhost:8000
+curl -X POST -H "Content-Type: application/json" -d "{\"word\": [551]}" localhost:8000
+curl -X POST -H "Content-Type: application/json" -d "{\"word\": [1079]}" localhost:8000
+curl -X POST -H "Content-Type: application/json" -d "{\"word\": [26]}" localhost:8000
+curl -X POST -H "Content-Type: application/json" -d "{\"word\": [133]}" localhost:8000
+curl -X POST -H "Content-Type: application/json" -d "{\"word\": [1079]}" localhost:8000
+ls
+subl word_to_integers.py 
+vim word_to_integers.py 
+python word_to_integers.py 
+python3 word_to_integers.py 
+vim word_to_integers.py 
+python word_to_integers.py 
+python3 word_to_integers.py 
+vim word_to_integers.py 
+python3 word_to_integers.py 
+ls
+less word_dict.txt 
+curl -X POST -H "Content-Type: application/json" -d "{\"word\": ['5', '214', '8', '2964', '1755', '12', '487']}" localhost:8000
+curl -X POST -H "Content-Type: application/json" -d "{\"word\": [5, 214, 8, 2964, 1755, 12, 487]}" localhost:8000
+curl -X POST -H "Content-Type: application/json" -d "{\"word\": [5, 214, 8, 25, 2964, 1755, 12, 487]}" localhost:8000
+curl -X POST -H "Content-Type: application/json" -d "{\"word\": [5, 214, 8, 2274,0]}" localhost:8000
+ls
+rm params_pass*
+ls
+touch word_to_integers.py
+vim word_to_integers.py 
+l;s
+python word_to_integers.py 
+python3 word_to_integers.py 
+vim word_to_integers.py 
+python3 word_to_integers.py 
+vim word_to_integers.py 
+python3 word_to_integers.py 
+vim word_to_integers.py 
+python3 word_to_integers.py 
+vim word_to_integers.py 
+python3 word_to_integers.py 
+vim word_to_integers.py 
+python3 word_to_integers.py 
+vim word_to_integers.py 
+python3 word_to_integers.py 
+vim word_to_integers.py 
+python3 word_to_integers.py 
+vim word_to_integers.py 
+python3 word_to_integers.py 
+vim word_to_integers.py 
+python3 word_to_integers.py 
+vim word_to_integers.py 
+python3 word_to_integers.py 
+vim word_to_integers.py 
+python3 word_to_integers.py 
+vim word_to_integers.py 
+python3 word_to_integers.py 
+vim word_to_integers.py 
+python3 word_to_integers.py 
+vim word_to_integers.py 
+python3 word_to_integers.py 
+vim word_to_integers.py 
+python3 word_to_integers.py 
+vim word_to_integers.py 
+python3 word_to_integers.py 
+vim word_to_integers.py 
+python3 word_to_integers.py 
+vim word_to_integers.py 
+cat word_dict.txt 
+vim word_to_integers.py 
+cat word_dict.txt 
+python3 word_to_integers.py 
+vim word_to_integers.py 
+python3 word_to_integers.py 
+vim word_to_integers.py 
+python3 word_to_integers.py 
+vim word_to_integers.py 
+python3 word_to_integers.py 
+vim word_to_integers.py 
+python3 word_to_integers.py 
+vim word_to_integers.py 
+python3 word_to_integers.py 
+vim word_to_integers.py 
+python3 word_to_integers.py 
+vim word_to_integers.py 
+ls
+vim word_to_integers.py 
+vim word_dict.txt 
+vim word_to_integers.py 
+python3 word_to_integers.py 
+vim word_to_integers.py 
+vim word_dict.txt 
+ls
+docker ps
+ls -lt
+date
+ls
+ls -lt
+vim loader_v2.py
+vim train_2.py 
+rm params_pass_*
+ls
+vim train_2.py 
+ls
+rm somerttgin 
+vim train_2.py 
+cat word_dict.txt 
+vim train_2.py 
+vim loader_v2.py
+
+python3 train_2.py 
+python train_2.py 
+nvidia-docker run -it -v $HOME/:/data --name second_try paddlepaddle/book:latest-gpu /bin/bash
+docker ps
+nvidia-docker run -it -v $HOME/:/data --name second_try paddlepaddle/book:latest-gpu /bin/bash
+docker ps
+docker stop second_try 
+docker rm second_try 
+nvidia-docker run -it -v $HOME/:/data --name second_try paddlepaddle/book:latest-gpu /bin/bash
