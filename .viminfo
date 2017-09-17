@@ -14,7 +14,14 @@
 :wq!
 :wq
 :q
+:!caddy
+:w!
 :w
+:!sudo node test
+:!node test
+:e
+:node test
+:E
 :q!
 :set number
 :3
@@ -31,47 +38,55 @@
 # Input Line History (newest to oldest):
 
 # Registers:
-""1	LINE	0
-			for line in t:
+"1	LINE	0
+	proxy / localhost:8002
 "2	LINE	0
-			print(i)
+	});
 "3	LINE	0
-			i = 0
+			for line in t:
 "4	LINE	0
-				i += 1
+			print(i)
 "5	LINE	0
-			
+			i = 0
 "6	LINE	0
-				
+				i += 1
 "7	LINE	0
+			
+"8	LINE	0
+				
+"9	LINE	0
 			print(len(t))
-"8	CHAR	0
-	
-				for t in line.split("','"):
-					print (t)	
-					(key,val) = t.split()
-					d[key] = val
-"-	CHAR	0
-	"
+""-	CHAR	0
+	34-230-32-181.compute-1.amazonaws.com 
 
 # File marks:
-'0  161  0  ~/train_2.py
-'1  155  36  ~/train_2.py
-'2  50  97  ~/loader_v2.py
-'3  110  9  ~/vec_word.py
-'4  1  4  ~/.gitignore
-'5  18  2  ~/word_to_integers.py
-'6  26  50  ~/word_to_integers.py
-'7  60  4  ~/loader_v2.py
-'8  154  0  ~/train_2.py
-'9  150  0  ~/loader_v2.py
+'0  143  36  ~/train_2.py
+'1  1  0  ~/loader_v2.py
+'2  120  0  ~/train_2.py
+'3  150  0  ~/loader_v2.py
+'4  1  19  ~/Caddyfile
+'5  2  22  ~/Caddyfile
+'6  11  0  ~/test.js
+'7  1  0  ~/install_nvm.sh
+'8  161  0  ~/train_2.py
+'9  155  36  ~/train_2.py
 
 # Jumplist (newest first):
--'  161  0  ~/train_2.py
+-'  143  36  ~/train_2.py
 -'  1  0  ~/train_2.py
+-'  1  0  ~/loader_v2.py
+-'  120  0  ~/train_2.py
+-'  150  0  ~/loader_v2.py
+-'  1  19  ~/Caddyfile
+-'  2  22  ~/Caddyfile
+-'  11  0  ~/test.js
+-'  9  0  ~/test.js
+-'  4  0  ~/test.js
+-'  1  0  ~/test.js
+-'  1  0  ~/install_nvm.sh
+-'  161  0  ~/train_2.py
 -'  155  36  ~/train_2.py
 -'  50  97  ~/loader_v2.py
--'  1  0  ~/loader_v2.py
 -'  110  9  ~/vec_word.py
 -'  1  0  ~/vec_word.py
 -'  1  4  ~/.gitignore
@@ -81,7 +96,6 @@
 -'  23  1  ~/word_to_integers.py
 -'  60  4  ~/loader_v2.py
 -'  154  0  ~/train_2.py
--'  150  0  ~/loader_v2.py
 -'  1  15  ~/word_dict.txt
 -'  7  12  ~/word_to_integers.py
 -'  9  17  ~/word_to_integers.py
@@ -153,30 +167,26 @@
 -'  17  15  ~/train.py
 -'  1  0  ~/train.py
 -'  1  0  ~/train
--'  1  0  ~/train
--'  17  15  ~/train.py
--'  1  0  ~/train.py
--'  1  0  ~/train
--'  1  0  ~/train
--'  17  15  ~/train.py
--'  1  0  ~/train.py
--'  1  0  ~/train
--'  1  0  ~/Dockerfile
--'  1  0  ~/DO
--'  17  15  ~/train.py
+-'  11  0  ~/test.js
+-'  9  0  ~/test.js
+-'  1  19  ~/Caddyfile
 
 # History of marks within files (newest to oldest):
 
 > ~/train_2.py
-	"	161	0
-	^	155	37
+	"	143	36
+	^	143	37
 	.	143	36
 	+	161	19
 	+	154	35
 	+	143	36
+	+	121	4
+	+	122	4
+	+	154	35
+	+	143	36
 
 > ~/loader_v2.py
-	"	50	97
+	"	1	0
 	^	50	98
 	.	50	88
 	+	50	28
@@ -186,6 +196,36 @@
 	+	64	29
 	+	60	4
 	+	50	88
+
+> ~/Caddyfile
+	"	1	19
+	^	1	20
+	.	1	19
+	+	1	0
+	+	1	16
+	+	1	11
+	+	3	0
+	+	2	22
+	+	1	44
+	+	1	19
+
+> ~/test.js
+	"	11	0
+	^	11	1
+	.	11	1
+	+	1	31
+	+	12	3
+	+	4	33
+	+	1	32
+	+	4	0
+	+	8	31
+	+	11	48
+	+	8	31
+	+	12	0
+	+	11	1
+
+> ~/install_nvm.sh
+	"	1	0
 
 > ~/vec_word.py
 	"	110	9

@@ -118,15 +118,15 @@ if __name__ == '__main__':
     # network config
     # Please choose the way to build the network
     # by uncommenting the corresponding line.
-    [cost, output] = convolution_net(dict_dim, class_dim=class_dim)
-    # [cost, output] = stacked_lstm_net(dict_dim, class_dim=class_dim, stacked_num=3)
+    #[cost, output] = convolution_net(dict_dim, class_dim=class_dim)
+    [cost, output] = stacked_lstm_net(dict_dim, class_dim=class_dim, stacked_num=3)
 
     # create parameters
     parameters = paddle.parameters.create(cost)
 
     # create optimizer
     adam_optimizer = paddle.optimizer.Adam(
-        learning_rate=2e-3,
+        learning_rate=2e-4,
         regularization=paddle.optimizer.L2Regularization(rate=8e-4),
         model_average=paddle.optimizer.ModelAverage(average_window=0.5))
 
@@ -140,7 +140,7 @@ if __name__ == '__main__':
                 sys.stdout.write('.')
                 sys.stdout.flush()
         if isinstance(event, paddle.event.EndPass):
-            with open('./params_pass5_%d.tar' % event.pass_id, 'w') as f:
+            with open('./params_pass7_%d.tar' % event.pass_id, 'w') as f:
                 parameters.to_tar(f)
 
             result = trainer.test(reader=test_reader, feeding=feeding)
@@ -151,7 +151,7 @@ if __name__ == '__main__':
         cost=cost, parameters=parameters, update_equation=adam_optimizer)
     # Save the inference topology to protobuf.
     inference_topology = paddle.topology.Topology(layers=output)
-    with open("./inference_topology.pkl", 'wb') as f:
+    with open("./inference_topology7.pkl", 'wb') as f:
         inference_topology.serialize_for_inference(f)
 
     trainer.train(

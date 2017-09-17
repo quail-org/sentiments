@@ -513,3 +513,86 @@ docker ps
 docker stop second_try 
 docker rm second_try 
 nvidia-docker run -it -v $HOME/:/data --name second_try paddlepaddle/book:latest-gpu /bin/bash
+less word_dict.txt
+git add -A
+git commit -m "new model"
+git push origin master
+ls
+mkdir testserve3
+ls
+cp params_pass5_0.tar testserve3/param.tar
+ls
+cp params_pass5_1.tar testserve3/param.tar
+cp inference_topology5.pkl testserve3/inference_topology.pkl
+ls
+vim train_2.py
+cp inference_topology.pkl testserve3/inference_topology.pkl
+ls
+nvidia-docker run --name paddle_serve3 -v $HOME/testserve3:/data -d -p 8002:80 -e WITH_GPU=1 paddlepaddle/book:serve-gpu
+docker ps
+ls
+docker ps
+docker stop paddle_serve3
+docker rm paddle_serve3
+ls
+cp inference_topology.pkl testserve3/inference_topology.pkl
+cp params_pass5_5.tar testserve3/param.tar
+nvidia-docker run --name paddle_serve3 -v $HOME/testserve3:/data -d -p 8002:80 -e WITH_GPU=1 paddlepaddle/book:serve-gpu
+ls
+docker ps
+ls
+docker ps
+docker stop paddle_serve3
+docker rm paddle_serve3
+ls
+cp inference_topology.pkl testserve3/inference_topology.pkl
+cp params_pass5_19.tar testserve3/param.tar
+nvidia-docker run --name paddle_serve3 -v $HOME/testserve3:/data -d -p 8002:80 -e WITH_GPU=1 paddlepaddle/book:serve-gpu
+ls
+docker ps
+git add -A
+git commit -m "updated model"
+git push origin master
+ls
+npm
+sudo apt install npm
+npm install -g n
+sudo npm install -g n
+node
+nodejs
+nodejs -v
+npm install auto-sni
+sudo npm install auto-sni
+sudo apt-get update
+sudo apt-get install npm
+npm install -g n@latest
+sudo npm install -g n@latest
+nodejs -v
+sudo apt-get install nodejs
+curl -sL https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh -o install_nvm.sh
+vim install_nvm.sh 
+bash install_nvm.sh 
+nvm ls-remote
+nvm
+exit
+node test.js
+curl https://getcaddy.com | bash
+vim Caddyfile
+caddy
+vim Caddyfile 
+ls
+caddy
+vim Caddyfile 
+caddy
+exit
+nvm ls-remote
+nvm install 8.x
+nvm install 7.x
+nvm install 7.0.0
+nodejs -v
+node -v
+npm install auto-sni
+vim test.js
+sudo -s
+ls
+exit

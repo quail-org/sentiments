@@ -1,0 +1,6 @@
+{
+	"domain": "ml.textpositive.org",
+	"certUrl": "https://acme-v01.api.letsencrypt.org/acme/cert/0479f43d93cc1771b9c3dec8a7f58d284a46",
+	"certStableUrl": "",
+	"accountRef": "https://acme-v01.api.letsencrypt.org/acme/reg/21394723"
+}

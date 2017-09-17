@@ -1,0 +1,20 @@
+{
+	"Email": "",
+	"Registration": {
+		"body": {
+			"resource": "reg",
+			"id": 21394723,
+			"key": {
+				"kty": "EC",
+				"crv": "P-384",
+				"x": "FEdi4Fo1bPR3LKPTfeq61yshHRj2vyQ0QmvinQiCLKSL94oAF0J8kGgAfL7uZAUH",
+				"y": "R888k4GziOTCK6Ne1UmMkNEzrNOjqdihps1vwj6_ubYBpzICATjOey-88tUpNOv3"
+			},
+			"contact": [],
+			"agreement": "https://letsencrypt.org/documents/LE-SA-v1.1.1-August-1-2016.pdf"
+		},
+		"uri": "https://acme-v01.api.letsencrypt.org/acme/reg/21394723",
+		"new_authzr_uri": "https://acme-v01.api.letsencrypt.org/acme/new-authz",
+		"terms_of_service": "https://letsencrypt.org/documents/LE-SA-v1.1.1-August-1-2016.pdf"
+	}
+}

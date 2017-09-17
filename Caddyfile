@@ -1,0 +1,3 @@
+ml.textpositive.org {
+	proxy / localhost:8002
+}
