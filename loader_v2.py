@@ -47,7 +47,7 @@ def build_dict(cutoff):
     word_freq = collections.defaultdict(int)
     for filename in filenames:
         for tweet in load_file(filename):
-            for word in tweet:
+            for word in tweet.lower().split(' '):
                 word_freq[word] += 1
 
     # Not sure if we should prune less-frequent words here.
@@ -57,6 +57,12 @@ def build_dict(cutoff):
     words, _ = list(zip(*dictionary))
     word_idx = dict(zip(words, xrange(len(words))))
     word_idx['<unk>'] = len(words)
+    #print word_idx	
+    with open("word_dict.txt", "w" ) as F:
+        t = csv.writer(F)
+        for key, value in word_idx.items():
+		t.writerow([key,value])
+
     return word_idx
 
 
@@ -141,4 +147,4 @@ def word_dict():
     :return: Word dictionary
     :rtype: dict
     """
-    return build_dict(150)
+    return build_dict(10)

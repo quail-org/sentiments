@@ -7,11 +7,22 @@
 
 # hlsearch on (H) or off (h):
 ~h
+# Last Search Pattern:
+~Msle0~/\<print\>
+
 # Command Line History (newest to oldest):
-:wq
 :q
+:w
+:wq
+:q!
+:set number
+:3
+:2
+:1
+:wq!
 
 # Search String History (newest to oldest):
+? \<print\>
 
 # Expression History (newest to oldest):
 
@@ -20,25 +31,67 @@
 # Input Line History (newest to oldest):
 
 # Registers:
+""1	LINE	0
+			for line in t:
+"2	LINE	0
+			print(i)
+"3	LINE	0
+			i = 0
+"4	LINE	0
+				i += 1
+"5	LINE	0
+			
+"6	LINE	0
+				
+"7	LINE	0
+			print(len(t))
+"8	CHAR	0
+	
+				for t in line.split("','"):
+					print (t)	
+					(key,val) = t.split()
+					d[key] = val
+"-	CHAR	0
+	"
 
 # File marks:
-'0  161  19  ~/train_2.py
-'1  1  0  ~/Dockerfile
-'2  1  0  ~/DO
-'3  85  23  ~/loader_v2.py
-'4  50  28  ~/loader_v2.py
-'5  17  15  ~/train.py
-'6  1  0  ~/train
-'7  4  28  ~/Dockerfile
+'0  1  4  ~/.gitignore
+'1  18  2  ~/word_to_integers.py
+'2  26  50  ~/word_to_integers.py
+'3  60  4  ~/loader_v2.py
+'4  154  0  ~/train_2.py
+'5  161  0  ~/train_2.py
+'6  150  0  ~/loader_v2.py
+'7  1  15  ~/word_dict.txt
+'8  7  12  ~/word_to_integers.py
+'9  9  17  ~/word_to_integers.py
 
 # Jumplist (newest first):
--'  161  19  ~/train_2.py
+-'  1  4  ~/.gitignore
+-'  18  2  ~/word_to_integers.py
+-'  1  0  ~/word_to_integers.py
+-'  26  50  ~/word_to_integers.py
+-'  23  1  ~/word_to_integers.py
+-'  60  4  ~/loader_v2.py
+-'  1  0  ~/loader_v2.py
+-'  154  0  ~/train_2.py
 -'  1  0  ~/train_2.py
+-'  161  0  ~/train_2.py
+-'  150  0  ~/loader_v2.py
+-'  1  15  ~/word_dict.txt
+-'  7  12  ~/word_to_integers.py
+-'  9  17  ~/word_to_integers.py
+-'  6  18  ~/word_to_integers.py
+-'  10  3  ~/word_to_integers.py
+-'  8  12  ~/word_to_integers.py
+-'  15  0  ~/word_to_integers.py
+-'  14  8  ~/word_to_integers.py
+-'  13  3  ~/word_to_integers.py
+-'  17  5  ~/word_to_integers.py
+-'  50  47  ~/loader_v2.py
 -'  1  0  ~/Dockerfile
 -'  1  0  ~/DO
--'  85  23  ~/loader_v2.py
--'  1  0  ~/loader_v2.py
--'  50  28  ~/loader_v2.py
+-'  86  23  ~/loader_v2.py
 -'  17  15  ~/train.py
 -'  1  0  ~/train.py
 -'  1  0  ~/train
@@ -56,9 +109,6 @@
 -'  1  0  ~/train.py
 -'  1  0  ~/train
 -'  1  0  ~/train
--'  85  23  ~/loader_v2.py
--'  1  0  ~/loader_v2.py
--'  50  28  ~/loader_v2.py
 -'  17  15  ~/train.py
 -'  1  0  ~/train.py
 -'  1  0  ~/train
@@ -76,9 +126,6 @@
 -'  1  0  ~/train
 -'  1  0  ~/Dockerfile
 -'  1  0  ~/DO
--'  85  23  ~/loader_v2.py
--'  1  0  ~/loader_v2.py
--'  50  28  ~/loader_v2.py
 -'  17  15  ~/train.py
 -'  1  0  ~/train.py
 -'  1  0  ~/train
@@ -96,9 +143,6 @@
 -'  1  0  ~/train.py
 -'  1  0  ~/train
 -'  1  0  ~/train
--'  85  23  ~/loader_v2.py
--'  1  0  ~/loader_v2.py
--'  50  28  ~/loader_v2.py
 -'  17  15  ~/train.py
 -'  1  0  ~/train.py
 -'  1  0  ~/train
@@ -114,14 +158,110 @@
 -'  17  15  ~/train.py
 -'  1  0  ~/train.py
 -'  1  0  ~/train
+-'  1  0  ~/Dockerfile
+-'  1  0  ~/DO
+-'  17  15  ~/train.py
+-'  1  0  ~/train.py
+-'  1  0  ~/train
+-'  4  28  ~/Dockerfile
+-'  18  2  ~/word_to_integers.py
 
 # History of marks within files (newest to oldest):
 
+> ~/.gitignore
+	"	1	4
+	^	1	5
+	.	1	4
+	+	1	4
+
+> ~/word_to_integers.py
+	"	18	2
+	^	18	3
+	.	18	2
+	+	5	29
+	+	6	31
+	+	2	5
+	+	15	34
+	+	17	19
+	+	6	18
+	+	6	30
+	+	6	16
+	+	6	43
+	+	6	19
+	+	6	16
+	+	6	17
+	+	6	20
+	+	6	33
+	+	6	28
+	+	6	42
+	+	14	0
+	+	8	16
+	+	1	9
+	+	6	18
+	+	13	22
+	+	15	0
+	+	17	8
+	+	13	14
+	+	15	0
+	+	17	16
+	+	13	16
+	+	17	0
+	+	13	3
+	+	13	15
+	+	13	3
+	+	13	2
+	+	17	8
+	+	13	0
+	+	13	0
+	+	13	0
+	+	13	0
+	+	8	0
+	+	8	6
+	+	13	0
+	+	13	0
+	+	14	8
+	+	14	9
+	+	10	22
+	+	13	3
+	+	14	0
+	+	8	0
+	+	13	20
+	+	11	15
+	+	14	0
+	+	8	13
+	+	10	13
+	+	6	19
+	+	8	0
+	+	7	12
+	+	10	10
+	+	9	18
+	+	26	48
+	+	23	0
+	+	26	52
+	+	18	2
+
+> ~/loader_v2.py
+	"	60	4
+	^	60	5
+	.	60	4
+	+	50	28
+	+	79	22
+	+	86	23
+	+	50	48
+	+	64	29
+	+	60	4
+
 > ~/train_2.py
-	"	161	19
+	"	154	0
 	^	161	20
 	.	161	19
 	+	161	19
+
+> ~/word_dict.txt
+	"	1	15
+	^	1	1
+	.	1	0
+	+	1	0
 
 > ~/Dockerfile
 	"	1	0
@@ -133,14 +273,6 @@
 
 > ~/DO
 	"	1	0
-
-> ~/loader_v2.py
-	"	85	23
-	^	85	24
-	.	85	23
-	+	50	28
-	+	78	22
-	+	85	23
 
 > ~/train.py
 	"	17	15

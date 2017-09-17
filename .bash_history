@@ -229,3 +229,39 @@ ls
 less neg.csv
 ls
 less pos.csv
+ls
+docker ps
+ls
+nvidia-docker run --name paddle_serve -v $HOME:/data -d -p 8000:80 -e WITH_GPU=1 paddlepaddle/book:serve-gpu
+docker ps
+docker stop paddle_serve
+docker ps
+ls
+cp params_pass2_2.tar param.tar
+rm param.tar
+ls
+mkdir testserve
+ls
+cp inference_topology2.pkl testserve/inference_topology.pkl
+cp params_pass2_2.tar testserve/param.tar
+ls
+cd testserve/
+ls
+nvidia-docker run --name paddle_serve -v $HOME/testserve:/data -d -p 8000:80 -e WITH_GPU=1 paddlepaddle/book:serve-gpu
+docker ps
+docker rm paddle_serve
+nvidia-docker run --name paddle_serve -v $HOME/testserve:/data -d -p 8000:80 -e WITH_GPU=1 paddlepaddle/book:serve-gpu
+docker ps
+ping localhost
+curl localhost
+curl localhost:8000
+curl -H "Content-Type: application/json" -d "{\"img\": [0.95, 0.95, 0.54, 0.82], \"sentence\": [23, 942, 402, 19]}" localhost:8000
+curl -H "Content-Type: application/json" -d "{\"sentence\": [23, 942, 402, 19]}" localhost:8000
+curl -H "Content-Type: application/json" -X POST -d "{\"img\": [0.95, 0.95, 0.54, 0.82], \"sentence\": [23, 942, 402, 19]}" localhost:8000
+curl -H "Content-Type: application/json" -X POST -d '{"img": [0.95, 0.95, 0.54, 0.82], "sentence": [23, 942, 402, 19]}' localhost:8000
+curl -H "Content-Type: application/json" -X POST -d '{"img": [0.95, 0.95, 0.54, 0.82], "sentence": [23, 942, 402, 19]}' localhost:8000/
+curl -H "Content-Type: application/json" -X POST -d '{"word": [0.95, 0.95, 0.54, 0.82]}' localhost:8000/
+curl -H "Content-Type: application/json" -X POST -d '{"word": [1, 2, 3, 4]}' localhost:8000/
+curl -H "Content-Type: application/json" -X POST -d '{"word": [1, 2, 3, 4, 5, 6, 7, 8]}' localhost:8000/
+ls
+ls
